@@ -8,6 +8,12 @@ export default new Router({
         {
             path: '/',
             component: () => import('../view/homepage.vue'),
+            // 计算属性和侦听器 基础例子
+        },
+        {
+            path: '/homepagetwo',
+            component: () => import('../view/homepagetwo.vue'),
+            // 计算属性和侦听器 基础例子
         },
     ]
 })
