@@ -20,6 +20,11 @@ export default new Router({
             component: () => import('../view/classstyle.vue'),
             // Class 与 Style 绑定
         },
+        {
+            path: '/model',
+            component: () => import('../view/model.vue'),
+            // 表单输入绑定
+        },
     ]
 })
 
