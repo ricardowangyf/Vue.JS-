@@ -25,11 +25,11 @@ export default {
       this.fullName = this.firstName + " " + val;
     },
   },
-  computed: {
-    a() {
-      return this.x + ' ' + this.a
-    }
-  }
+  // computed: {
+  //   a() {
+  //     return this.x + ' ' + this.a
+  //   }
+  // }
 };
 </script>
 

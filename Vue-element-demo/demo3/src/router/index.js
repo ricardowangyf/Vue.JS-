@@ -15,6 +15,11 @@ export default new Router({
             component: () => import('../view/homepagetwo.vue'),
             // 计算属性和侦听器 基础例子
         },
+        {
+            path: '/classstyle',
+            component: () => import('../view/classstyle.vue'),
+            // Class 与 Style 绑定
+        },
     ]
 })
 
