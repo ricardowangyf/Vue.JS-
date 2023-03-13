@@ -1,0 +1,54 @@
+### 用户列表
+
+# GET http://localhost:3721/api/user/list HTTP/1.1
+
+
+### 登录
+
+# POST http://localhost:3721/api/login/account HTTP/1.1
+# content-type: application/json
+
+# {
+#     "password": "888888",
+#     "username": "admin"
+# }
+
+
+
+### 登录
+
+# GET http://localhost:3721/api/user/list HTTP/1.1
+# content-type: application/json
+
+# {
+#    "id": "2",
+#     "username": "kennyD",
+#     "sex": "6"
+# },
+
+
+# GET http://localhost:3721/api/user/list HTTP/1.1
+# content-type: application/json
+
+# {
+#         "id": "3",
+#         "username"::"kenny",
+#         "sex": "2"
+#     }, {
+#         "id": "2",
+#         "username": "kennyD",
+#         "sex": "6"
+#     }
+
+
+# DELETE  http://localhost:3721/api/user/:id  HTTP/1.1
+# content-type: application/json
+
+
+# GET http://localhost:3721/api/:owner/:repo/raw/:ref/(.*)  HTTP/1.1
+# content-type: application/json
+
+
+
+GET http://localhost:3721/api/user/list  HTTP/1.1
+content-type: application/json
