@@ -25,6 +25,11 @@ export default new Router({
             component: () => import('../view/model.vue'),
             // 表单输入绑定
         },
+        {
+            path: '/components',
+            component: () => import('../view/components.vue'),
+            // 表单输入绑定
+        },
     ]
 })
 
