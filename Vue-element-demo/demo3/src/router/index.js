@@ -38,7 +38,12 @@ export default new Router({
         {
             path: '/aaa',
             component: () => import('../view/parte.vue'),
-            // 组件之间的循环引用
+            // 程序化的事件侦听器
+        },
+        {
+            path: '/cccc',
+            component: () => import('../view/comp.vue'),
+            // 程序化的事件侦听器
         },
     ]
 })
