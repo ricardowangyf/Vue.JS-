@@ -33,7 +33,12 @@ export default new Router({
         {
             path: '/All',
             component: () => import('../view/All.vue'),
-            // 表单输入绑定
+            // 组件之间的循环引用
+        },
+        {
+            path: '/aaa',
+            component: () => import('../view/parte.vue'),
+            // 组件之间的循环引用
         },
     ]
 })
