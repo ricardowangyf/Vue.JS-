@@ -30,6 +30,11 @@ export default new Router({
             component: () => import('../view/components.vue'),
             // 表单输入绑定
         },
+        {
+            path: '/All',
+            component: () => import('../view/All.vue'),
+            // 表单输入绑定
+        },
     ]
 })
 
