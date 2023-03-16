@@ -38,7 +38,7 @@ export default new Router({
         {
             path: '/aaa',
             component: () => import('../view/parte.vue'),
-            // 程序化的事件侦听器
+            // 异步组件
         },
         {
             path: '/cccc',
