@@ -1,8 +1,14 @@
 <template>
   <div>
     <Child />
+    <!-- 123123 -->
+    <hr />
     <part />
+    <!-- 123123 -->
+    <hr />
     <Comment />
+    <!-- 123123 -->
+    <hr />
   </div>
 </template>
   

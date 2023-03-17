@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Parent</h1>
+    3
     <Comment />
   </div>
 </template>

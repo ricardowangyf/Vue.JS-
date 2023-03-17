@@ -2,6 +2,7 @@
     <div>
       <h2>Child</h2>
       <Parent />
+      1
     </div>
   </template>
   
