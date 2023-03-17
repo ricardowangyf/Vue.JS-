@@ -10,6 +10,11 @@ export default new Router({
             component: () => import('../components/HelloWorld.vue'),
             // 计算属性和侦听器 基础例子
         },
+        {
+            path: '/donghua',
+            component: () => import('../view/dong.vue'),
+            // 计算属性和侦听器 基础例子
+        },
     ]
 })
 
