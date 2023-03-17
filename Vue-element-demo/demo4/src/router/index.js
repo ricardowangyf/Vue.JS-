@@ -20,6 +20,11 @@ export default new Router({
             component: () => import('../view/ming.vue'),
             // 自定义过渡的类名
         },
+        {
+            path: '/CompantNmae',
+            component: () => import('../view/CompantNmae.vue'),
+            // JavaScript 钩子
+        },
     ]
 })
 
