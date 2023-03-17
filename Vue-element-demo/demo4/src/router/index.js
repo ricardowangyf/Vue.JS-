@@ -8,12 +8,17 @@ export default new Router({
         {
             path: '/',
             component: () => import('../components/HelloWorld.vue'),
-            // 计算属性和侦听器 基础例子
+            // CSS过渡
         },
         {
             path: '/donghua',
             component: () => import('../view/dong.vue'),
-            // 计算属性和侦听器 基础例子
+            // CSS动画 
+        },
+        {
+            path: '/ming',
+            component: () => import('../view/ming.vue'),
+            // 自定义过渡的类名
         },
     ]
 })
