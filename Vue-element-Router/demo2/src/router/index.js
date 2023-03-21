@@ -5,15 +5,24 @@ export default new Router({
     mode: 'hash',
     linkActiveClass: 'isactive',
     routes: [
-        // {
-        //     path: '/',
-        //     component: () => import('../view/HomePage.vue'),
-        // },
         {
             path: '/user/:id',
             name: 'user',
             component: () => import('../components/User.vue')
-          }
+        },   //带参数的动态路由匹配
+        {
+            path: '/name/:id',
+            // path: '/' 表示匹配根路径，即主页。
+            component: () => import('../components/name.vue'),
+            children: [
+                { path: 'profile',
+                 component: () => import('../components/pofile.vue' ),
+                },
+                { path: 'posts',
+                 component: () => import('../components/posts.vue' ), 
+                }
+            ]
+        }
     ]
 })
 
