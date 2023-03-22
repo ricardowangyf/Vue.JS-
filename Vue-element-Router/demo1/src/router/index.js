@@ -11,7 +11,7 @@ import register from '../components/index/register'
 export const routes = [
 
     {
-        path: '/',
+        path: '/awdawd',
         name: 'index',
         component: index
     },
@@ -39,6 +39,18 @@ export const routes = [
         path: '/HomePage',
         component: HomePage
     },
+    {
+        path: '/',
+        name: 'home',
+        component: () => import('../components/homea.vue')
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: () => import('../components/about.vue'),
+        alias: '/about-us'
+      },
+     
 ]
 
 export const router = new Router({
