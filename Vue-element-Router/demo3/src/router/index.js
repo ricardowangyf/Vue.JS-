@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
+const Home = () => import('@/components/Home.vue')
 export default new Router({
     linkActiveClass: 'isactive',
      mode: 'history',
@@ -14,7 +14,13 @@ export default new Router({
             path: '/',
             name: 'UserList',
             component: () => import('../components/UserList.vue'),
-          },
+        },
+        {
+            path: '/Home',
+            name: 'Home',
+            component: Home,
+        },
+        
     ]
 })
 
