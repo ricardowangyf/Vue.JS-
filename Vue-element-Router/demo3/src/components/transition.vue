@@ -1,21 +1,23 @@
 <template>
   <div>
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
+    <div>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "ItemIndex",
   data() {
     return {};
   },
 };
 </script>
 
-<style>
+<style >
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;

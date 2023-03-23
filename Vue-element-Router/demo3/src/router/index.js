@@ -16,6 +16,11 @@ export default new Router({
             component: () => import('../components/UserList.vue'),
         },
         {
+            path: '/transition',
+            name: 'transition',
+            component: () => import('../components/transition.vue'),
+        },
+        {
             path: '/Home',
             name: 'Home',
             component: Home,
