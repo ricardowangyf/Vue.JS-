@@ -23,7 +23,7 @@ export default new Router({
         {
             path: '/CompantNmae',
             component: () => import('../view/CompantNmae.vue'),
-            // JavaScript 钩子
+            // JavaScript钩子
         },
     ]
 })
