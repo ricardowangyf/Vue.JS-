@@ -47,6 +47,11 @@ export default new Router({
             component: Home,
         },
         {
+            path: '/daohang',
+            name: 'daohang',
+            component: () => import('../components/daohang.vue'),
+        },
+        {
             path: '/footer',
             components: {
               default: Home, // 默认组件
