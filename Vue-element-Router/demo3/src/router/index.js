@@ -5,21 +5,26 @@ const Home = () => import('@/components/Home.vue')
 
 Router.beforeEach((to, from, next) => {
     // 在此处添加您的验证逻辑或其他操作
-  
+
     // 如果用户已经登录，则继续导航
     if (isLoggedIn()) {
-      next();
+        next();
     } else {
-      // 否则，将用户重定向到登录页面
-      next('/login');
+        // 否则，将用户重定向到登录页面
+        next('/login');
     }
-  });
-  function isLoggedIn() {
+});
+function isLoggedIn() {
     return localStorage.getItem('token');
-  }
+}
+Vue.prototype.$afterEach = function (to, from) {
+    // 在每个路由切换后执行的代码
+    // 这里可以写一些统计、日志等通用的操作
+    console.log(`从 ${from.path} 到 ${to.path} 的路由切换完成`);
+};
 export default new Router({
     linkActiveClass: 'isactive',
-     mode: 'history',
+    mode: 'history',
     routes: [
         {
             path: '/user/:id',
@@ -41,9 +46,11 @@ export default new Router({
             name: 'Home',
             component: Home,
         },
-        
-    ]
+
+    ],
+    afterEach: vm.$afterEach,
 })
+
 
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {
