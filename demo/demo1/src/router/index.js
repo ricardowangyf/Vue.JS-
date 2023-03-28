@@ -10,12 +10,17 @@ export default new Router({
             path: '/',
             name: 'homePage',
             component: () => import('../components/HelloWorld.vue'),
-        },
+        },//计算属性
         {
             path: '/list',
             name: 'ListenerApp',
             component: () => import('../components/ComPant.vue'),
-        },
+        },//侦听器
+        {
+            path: '/vbind',
+            name: 'vbind',
+            component: () => import('../components/vbind.vue'),
+        },//侦听器
     ]
 })
 
