@@ -20,7 +20,12 @@ export default new Router({
             path: '/vbind',
             name: 'vbind',
             component: () => import('../components/vbind.vue'),
-        },//侦听器
+        },//class与style绑定
+        {
+            path: '/condition',
+            name: 'condition',
+            component: () => import('../components/condition.vue'),
+        },//class与style绑定
     ]
 })
 
