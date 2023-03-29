@@ -31,6 +31,11 @@ export default new Router({
             name: 'vfor',
             component: () => import('../components/vfor.vue'),
         },//列表渲染
+        {
+            path: '/processing',
+            name: 'processing',
+            component: () => import('../components/processing.vue'),
+        },//事件处理
     ]
 })
 
