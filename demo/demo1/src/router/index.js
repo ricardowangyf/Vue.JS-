@@ -25,7 +25,12 @@ export default new Router({
             path: '/condition',
             name: 'condition',
             component: () => import('../components/condition.vue'),
-        },//class与style绑定
+        },//条件渲染
+        {
+            path: '/vfor',
+            name: 'vfor',
+            component: () => import('../components/vfor.vue'),
+        },//列表渲染
     ]
 })
 
