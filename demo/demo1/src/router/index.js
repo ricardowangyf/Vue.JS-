@@ -36,6 +36,16 @@ export default new Router({
             name: 'processing',
             component: () => import('../components/processing.vue'),
         },//事件处理
+        {
+            path: '/biao',
+            name: 'biao',
+            component: () => import('../components/biao.vue'),
+        },//表单输入绑定
+        {
+            path: '/xiushi',
+            name: 'xiushi',
+            component: () => import('../components/xiushi.vue'),
+        },//修饰符
     ]
 })
 
