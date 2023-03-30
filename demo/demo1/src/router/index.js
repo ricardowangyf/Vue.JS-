@@ -51,6 +51,11 @@ export default new Router({
             name: 'MyLocalComponent',
             component: () => import('../components/MyLocalComponent.vue'),
         },//组件注册/局部注册
+        {
+            path: '/bar',
+            name: 'bar',
+            component: () => import('../components/bar.vue'),
+        },//Prop
     ]
 })
 
