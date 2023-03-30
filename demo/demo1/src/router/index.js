@@ -46,6 +46,11 @@ export default new Router({
             name: 'xiushi',
             component: () => import('../components/xiushi.vue'),
         },//修饰符
+        {
+            path: '/xiasdasdushi',
+            name: 'MyLocalComponent',
+            component: () => import('../components/MyLocalComponent.vue'),
+        },//组件注册/局部注册
     ]
 })
 
